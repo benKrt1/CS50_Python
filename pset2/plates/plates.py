@@ -1,5 +1,5 @@
 def main():
-    plate = input("Plate: ").strip()
+    plate = input("Plate: ")
     if is_valid(plate):
         print("Valid")
     else:
@@ -16,14 +16,14 @@ def is_valid(s):
 
     for character in s:
         if not character.isalnum():
-            return False
-    if character.isdigit():
-        if not found_number:
-            if character == "0":
                 return False
-            found_number = True
-    elif found_number:
-        return False
+        if character.isdigit():
+            if not found_number:
+                if character == "0":
+                    return False
+                found_number = True
+        elif found_number:
+            return False
 
     return True
        
