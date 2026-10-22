@@ -1,7 +1,0 @@
-print(type(50))
-print(type("hello"))
-print(type([]))
-print(type(3.1))
-print(type(list()))
-print(type({}))
-print(type(dict()))
